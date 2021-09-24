@@ -155,7 +155,7 @@ if(Number(turno)) {
     //2
     /* 2. Você foi contratado para criar um sistema de vendas de ingressos de jogos de um
      estádio de futebol. Para esta compra, o usuário deve fornecer algumas informações:
-    
+     */
      const nomeC = prompt("Digite seu nome: ");
     const tipoJ = prompt
     ("Digite o tipo de Jogo:  'IN' indica internacional; e 'DO' indica doméstico; ");
@@ -164,8 +164,144 @@ if(Number(turno)) {
     const categoriaJ = prompt("Digite a Categoria:  pode ser as opções 1, 2, 3 ou 4; ");
     const qtddIngressos = prompt("Digite quantos ingressos vc deseja:")
 
-    let IngCat1 = 1320;
-    let IngCat1 = 1320;
-    let IngCat1 = 1320; */
+     console.log(`
+    Dados do cliente: ${nomeC} \n
+    Tipo do jogo:   ${tipoJ} \n
+    Etapa do jogo: ${etapaJ} \n
+    Categoria: ${categoriaJ} \n
+    Quantidade de Ingressos: ${qtddIngressos} \n
+    `)
+    let ingresso;
+    switch (tipoJ) {
+        case "DO":
+        if(etapaJ === "SF") {
+            
+       if(categoriaJ === "1"){
+        ingresso = 1230
+        console.log(`Valor do Ingressos:${ingresso} `)
+       } else if (categoriaJ === "2"){
+        ingresso = 880
+        console.log(`Valor do Ingressos:${ingresso} `)
+       }
+       else if (categoriaJ === "3"){
+        ingresso = 550
+        console.log(`Valor do Ingressos:${ingresso} `)
+        }
+        else if (categoriaJ === "4"){
+            ingresso = 220
+            console.log(`Valor do Ingressos:${ingresso} `)
+        } else { console.log("Erro")}
 
-    
+        }
+        
+        else if (etapaJ === "DT") {
+            
+            if(categoriaJ === "1"){
+             ingresso = 660
+             console.log(`Valor do Ingressos:${ingresso} `)
+            } else if (categoriaJ === "2"){
+             ingresso = 440
+             console.log(`Valor do Ingressos:${ingresso} `)
+            }
+            else if (categoriaJ === "3"){
+             ingresso = 330
+             console.log(`Valor do Ingressos:${ingresso} `)
+             }
+             else if (categoriaJ === "4"){
+                 ingresso = 170
+                 console.log(`Valor do Ingressos:${ingresso} `)
+             } else { console.log("Erro")}
+     
+             }
+             
+             else if (etapaJ === "FI") {
+            
+                if(categoriaJ === "1"){
+                 ingresso = 1980
+                 console.log(`Valor do Ingressos:${ingresso} `)
+                } else if (categoriaJ === "2"){
+                 ingresso = 1320
+                 console.log(`Valor do Ingressos:${ingresso} `)
+                }
+                else if (categoriaJ === "3"){
+                 ingresso = 880
+                 console.log(`Valor do Ingressos:${ingresso} `)
+                 }
+                 else if (categoriaJ === "4"){
+                     ingresso = 330
+                     console.log(`Valor do Ingressos:${ingresso} `)
+                 } else { console.log("Erro")}
+         
+                 }
+
+        break;
+        case "IN":
+            if(etapaJ === "SF") {
+            
+                if(categoriaJ === "1"){
+                 ingresso = 1230 * 4.10
+                 console.log(`Valor do Ingressos:${ingresso} `)
+                } else if (categoriaJ === "2"){
+                 ingresso = 880 * 4.10
+                 console.log(`Valor do Ingressos:${ingresso} `)
+                }
+                else if (categoriaJ === "3"){
+                 ingresso = 550 * 4.10
+                 console.log(`Valor do Ingressos:${ingresso} `)
+                 }
+                 else if (categoriaJ === "4"){
+                     ingresso = 220 * 4.10
+                     console.log(`Valor do Ingressos:${ingresso} `)
+                 } else { console.log("Erro")}
+         
+                 }
+                 
+                 
+                 else if (etapaJ === "DT") {
+                     
+                     if(categoriaJ === "1"){
+                      ingresso = 660 * 4.10
+                      console.log(`Valor do Ingressos:${ingresso} `)
+                     } else if (categoriaJ === "2"){
+                      ingresso = 440 * 4.10
+                      console.log(`Valor do Ingressos:${ingresso} `)
+                     }
+                     else if (categoriaJ === "3"){
+                      ingresso = 330 * 4.10
+                      console.log(`Valor do Ingressos:${ingresso} `)
+                      }
+                      else if (categoriaJ === "4"){
+                          ingresso = 170 * 4.10
+                          console.log(`Valor do Ingressos:${ingresso} `)
+                      } else { console.log("Erro")}
+              
+                      }
+                      
+                      else if (etapaJ === "FI") {
+                     
+                         if(categoriaJ === "1"){
+                          ingresso = 1980 * 4.10
+                          console.log(`Valor do Ingressos:${ingresso} `)
+                         } else if (categoriaJ === "2"){
+                          ingresso = 1320 * 4.10
+                          console.log(`Valor do Ingressos:${ingresso} `)
+                         }
+                         else if (categoriaJ === "3"){
+                          ingresso = 880 * 4.10
+                          console.log(`Valor do Ingressos:${ingresso} `)
+                          }
+                          else if (categoriaJ === "4"){
+                              ingresso = 330 * 4.10
+                              console.log(`Valor do Ingressos:${ingresso} `)
+                          } else { console.log("Erro")}
+                  
+                          }
+        break;
+        
+        default:
+            console.log("Tente novamente!")
+
+        break;
+    }
+
+    console.log("VALOR TOTAL:", ingresso * qtddIngressos)

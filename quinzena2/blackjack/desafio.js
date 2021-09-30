@@ -12,7 +12,7 @@ let pontuacaoPc = carta1Pc.valor + carta2Pc.valor;
 
 
 if((carta1Usuario.value + novaCartaUsuario.value) == 22 || 
-(carta1Pc.value + novaCartaPc.value) == 22 ) {
+(carta1Pc.value + carta2Pc.value) == 22 ) {
    console.log(`@Usuario - Cartas iniciais: ${carta1Usuario.texto} e ${novaCartaUsuario.texto}`)+
    console.log(`#PC cartas iniciais: ${carta1Pc.texto} e ${carta2Pc.texto}`) 
 

@@ -1,4 +1,18 @@
 console.log("Olá Usuário, Bem-vindo ao BlackJack!");
+const carta = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
+console.log("Cartas e valores:")
+for(let i = 0; i < carta.length; i++) {
+   if (carta[i] === "A") {
+      valor = 11
+    } else if (carta[i]  === "J" || carta[i]  === "Q" ||carta[i]  === "K") {
+      valor = 10
+    } else { // Se nao for uma das letras, só converte a string para número
+      valor = Number(carta[i])
+    }
+    
+ console.log(`${carta[i]} vale: ${valor}`)
+
+}
 
 let carta1Usuario = comprarCarta();
 let novaCartaUsuario = comprarCarta();
@@ -16,7 +30,7 @@ if((carta1Usuario.value + novaCartaUsuario.value) == 22 ||
 
 console.log(" Press 'F5'!!!  Sorteie novamente")
 } 
-// se nao inicia a rodada  E se resposta: sim inicia / se nao finaliza (linha 70)
+// se nao inicia a rodada  E se resposta: sim inicia / se nao finaliza (linha 84)
 else if (confirm("Quer iniciar uma nova rodada?")){ 
    // mostra as cartas do usuario, pontuação e 1 carta do pc
  console.log(`@Usuario - Cartas iniciais: ${carta1Usuario.texto} e ${novaCartaUsuario.texto}`)+

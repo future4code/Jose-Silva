@@ -70,19 +70,24 @@ const booleano2 = false
 const booleano3 = !booleano2  //true
 const booleano4 = !booleano3 
 function retornaExpressoesBooleanas() {
-  let resposta = []
-  if(booleano1 && booleano2 && !booleano4){
-  return resposta = [booleano1,booleano2,booleano3,booleano4]
-  }else if((booleano1 && booleano2) || !booleano3){
-    return resposta = [booleano1,booleano2,booleano3,booleano4]
-  } else if((booleano2 || booleano3) && (booleano4 || booleano1)){
-    return resposta = [false,false,true,true,true]
-  }else if(!(booleano2 && booleano3) || !(booleano1 && booleano3)){
-    return resposta = [booleano1,booleano2,booleano3,booleano4]
-  }else if((booleano1) && !(booleano3) || (!booleano4 && booleano3 && booleano3)){
-    return resposta = [booleano1,booleano2,booleano3,booleano4]
+  let arrB = []
+  let v = new Boolean(true)
+  let f = new Boolean(false)
+  
+  booleano1 && booleano2 && !booleano4 ? arrB.push(v) :  arrB.push(f);
+  (booleano1 && booleano2) || !booleano3 ? arrB.push(v) :  arrB.push(f);
+  (booleano2 || booleano3) && (booleano4 || booleano1) ? arrB.push(v) :  arrB.push(f);
+  !(booleano2 && booleano3) || !(booleano1 && booleano3)? arrB.push(v) :  arrB.push(f);
+  !(booleano1) && !(booleano3) || (!booleano4 && booleano3 && booleano3)? arrB.push(v) :  arrB.push(f);
+
+  //console.log(arrB)
+  return arrB
+
+
+  
+
 }
-}
+
 retornaExpressoesBooleanas()
 
 
@@ -324,27 +329,133 @@ function verificaParidade(array) {
 }
 
 // EXERCÍCIO 18A
+
+
+
 function retornaPessoasAutorizadas(pessoas) {
 
+  const pessoasAut = pessoas.filter((item) =>{
+      // se atender todos entra
+     if(item.altura >= 1.5 && item.idade > 14 && item.idade < 60){
+      return item
+     }
+    })
+ // console.log(pessoasAut)
+ return pessoasAut
+  
 }
 
 // EXERCÍCIO 18B
-function retornaPessoasNaoAutorizadas(pessoas) {
 
+function retornaPessoasNaoAutorizadas(pessoas) {
+  const pessoasNAut = pessoas.filter((item) =>{
+    // se algum bater não entra
+    if(item.altura < 1.5 || item.idade <= 14 || item.idade > 60){
+      return item
+     }
+    })
+  
+    console.log(pessoasNAut)
+  
+ return pessoasNAut
 }
 
 // EXERCÍCIO 19A
 function ordenaPorNome(consultasNome) {
+  
+  consultasNome.sort((a, b) => {
+    return a.nome > b.nome ? 1 : -1;
+  });
 
+  return consultasNome
+  
 }
 
 // EXERCÍCIO 19B
+const consultas1 = [
+  { nome: "João", dataDaConsulta: ("01/10/2021") },
+  { nome: "Pedro", dataDaConsulta:("02/07/2021") },
+  { nome: "Paula", dataDaConsulta: ("03/11/2021") },
+  { nome: "Márcia",  dataDaConsulta: ("04/05/2021")}
+]
 function ordenaPorData(consultasData) {
+  let dataConvertida;
+  // função para formatar a data para ordenar.....
+  function FormataStringData(data) {
+    var dia  = data.split("/")[0];
+    var mes  = data.split("/")[1];
+    var ano  = data.split("/")[2];
+  
+    dataConvertida = ano + '-' + ("0"+mes).slice(-2) + '-' + ("0"+dia).slice(-2);
 
+    return dataConvertida;
+    // Utilizo o .slice(-2) para garantir o formato com 2 digitos.
+  }
+
+  for (var i = 0; i <consultasData.length; i++){
+    //varre o vetor
+    FormataStringData(consultasData[i].dataDaConsulta);
+    //Invoca formataData passando as posições das datas
+   consultasData[i].dataDaConsulta = dataConvertida
+   //posições das datas recebem a data convertida
+  }
+ 
+  // função para ordenar as datas, depois de convertidas...
+  consultasData.sort((a, b) => {
+    
+     return (b.dataDaConsulta) < (a.dataDaConsulta) ? 1 : -1;
+
+  });
+
+  //função para desconverter as datas para finalizar o exercício...
+    let ndataConvertida;
+   for (var j = 0; j <consultasData.length; j++){
+    function nFormataStringData(data) {
+
+    var ndia  = data.split("-")[0];
+    var nmes  = data.split("-")[1];
+    var nano  = data.split("-")[2];
+  
+    return ndataConvertida = nano + '/' + ("0"+nmes).slice(-2) + '/' + ("0"+ndia).slice(-4) ;
+
+    }
+    nFormataStringData(consultasData[j].dataDaConsulta);
+
+    consultasData[j].dataDaConsulta = ndataConvertida;
+
+  }
+  
+  console.log(consultasData);
+  return consultasData
 }
-
+ordenaPorData(consultas1)
 // EXERCÍCIO 20
+const contas1 = [
+	{ cliente: "João", saldoTotal: 1000, compras: [100, 200, 300] },
+	{ cliente: "Paula", saldoTotal: 7500, compras: [200, 1040] },
+	{ cliente: "Pedro", saldoTotal: 10000, compras: [5140, 6100, 100, 2000] },
+	{ cliente: "Luciano", saldoTotal: 100, compras: [100, 200, 1700] },
+	{ cliente: "Artur", saldoTotal: 1800, compras: [200, 300] },
+	{ cliente: "Soter", saldoTotal: 1200, compras: [] }
+]
+
 function calculaSaldo(contas) {
 
+for(let i = 0; i < contas.length; i++) {
+  //intera o vetor de ponta a ponta...
+    let somar = contas[i].compras.reduce((soma, i) => {
+      //somar recebe contas.compras da e soma suas posicões
+      return (soma + i);
+  },0);  
+  
+  //console.log(contas[i].saldoTotal = (contas[i].saldoTotal - somar))
+//contas.saldoTotal vão recebendo novo valor = seu saldo antigo -menos as compras ja somadas
+  contas[i].saldoTotal = (contas[i].saldoTotal - somar)
+  // i inicia em 0 depois 1 ...
 }
+//console.log(contas)
+//return o array com suas modificações
+return contas
+}
+calculaSaldo(contas1)
 

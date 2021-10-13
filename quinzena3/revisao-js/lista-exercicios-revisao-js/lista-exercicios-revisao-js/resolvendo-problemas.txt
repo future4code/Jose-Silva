@@ -1,0 +1,33 @@
+1. Quais são os 7 passos fundamentais para a resolução de problemas e como eles podem nos ajudar a solucionar nossos desafios de programação?
+
+I- Ter atenção ao enunciado
+Talvez o passo mais importante, ter atenção ao enunciado e compreender o que ele pede. Anotar o que esta pedindo, anotar informações e dados.Ler mais de uma vez são dicas importantes neste passo, É necessário entender 100% o problema para resolve-lo. Após isso podemos seguir para o próximo.
+
+II- Retirar informações Relevantes
+É aqui que devemos extrair o que o enunciado já nos da de informações e em seguida começar a raciocinar/imaginar/interpretar o que será feito posteriormente.
+
+III-Pensar Entradas e Saídas
+É hora de imaginar o código de acordo com suas entradas (entrada são o ponto de partida do processo )e saída (seriam o retorno que precisa acontecer).
+
+IV- Fazer um esquema visual
+Fazer um esquema visual,um desenho ou um digrama muitas vezes facilita ainda mais o desenvolvedor a compreender melhor o problema que ele precisa resolver.
+No meu caso, gosto muito de criar um diagrama no visio
+
+V- Criar codigo feio 
+É Hora de criar o código com tudo que temos até aqui.Escolher a melhor maneira que pensamos em criar a solução e implementar.
+É importante analisar todos os passos anteriores novamente para que a resolução ocorra corretamente.
+
+VI- Testar: Força-Bruta
+Aqui devemos testar  solução implementada e ver se está resolvendo todos os problemas do enunciado.
+Se não devemos analisar o que está impedindo a resolução e corrigir.
+Voltar novamente ao passo 1 e seguir, pode ajudar a resolver.
+Extremamente importante analisar se a lógica está correta.
+Se o for problema de código/sintaxe, podemos pesquisar na Internet...
+
+Quando estiver tudo funcionando podemos seguir para o passo final!
+
+VII- Refatorar
+É hora de melhorar nosso código...
+Refatorar o código é deixar ele mais limpo, é dar bons nomes a variaveis,objetos,arrays... é desfrutar de tudo que a linguagem oferece.
+É por exemplo: diminuir a quantidade de linhas, separar as funções, diminuir a quantidade de ifs.
+Após refator terminamos o processo.

@@ -1,0 +1,18 @@
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img{
+    height:140px;
+    width: 140px;
+
+    object-fit: contain;
+}
+li {
+    display: inline;
+  }
+  #logo{
+      height:100%;
+      width:100%;
+  }

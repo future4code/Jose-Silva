@@ -1,0 +1,10 @@
+``` function calculaSalario(qtdeCarrosVendidos, valorTotalVendas) {
+
+let cemPcarro = qtdeCarrosVendidos * 100;
+let salario = 2000 + cemPcarro;
+
+salario  = salario + (valorTotalVendas * 0.05)
+
+return salario
+
+} ´´´

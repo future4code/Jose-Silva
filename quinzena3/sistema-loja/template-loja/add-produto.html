@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Adicionar Produto</title>
+    <link rel="stylesheet" href="index.css" type="text/css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css
+    ">
+</head>
+<body>
+    <div class="header">
+        <nav>
+        <ul>
+
+        <li >
+        <a href="index.html" class="logo">        
+        <p class="text-logo">    <i>  Outlet Calçados SP </i>
+            <i class="fas fa-shoe-prints"></i>   </p>
+        <img id="logo" src="./img/logo.jpg" alt="Outlet Calçados SP"/>
+        </a>
+        </li>
+        <div class="header-right">
+          
+          
+            <li> <a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+            <div class="dropdown" ><a href="add-produto.html"><i class="fas fa-user-shield"></i> Administrador</a>
+              <div class="dropdown-content">
+               <li class="dropbtn">        <a href="funcionarios.html" ><i class="fa fa-users"></i> Funcionários</a></li>
+               <li class="dropbtn">        <a href="add-produto.html" ><i class="fas fa-plus-square"></i> Novo Produto</a></li>
+               <li class="dropbtn">        <a href="vendas.html" ><i class="fas fa-chart-line"></i> Vendas </a></li>
+             </div>
+           </div>
+            <li> <a href="ctrl-estoque.html"><i class="fas fa-shoe-prints"></i>     Produtos</a></li>
+         
+          <li>        <a href="carrinho.html" ><i class="fas fa-shopping-cart">( 2 )</i> Carrinho</a></li>
+          <li>        <a href="#btn-enviar" ><i class="fa fa-phone"></i> Contato</a></li>
+        
+        </div>
+       
+    </ul>
+    
+    </nav>
+      </div>
+    <br>
+
+    
+    <h2>Novo Produto:</h2>
+    <hr>
+    <form action="cadastro.html" id="formulario">
+        <div class="campos">
+            <label for="link-foto">Link para foto: </label>
+            <input placeholder="Digite a url da imagem..." type="url" id="link-foto" name="link-foto">
+        </div>
+        
+        <div class="campos">
+            <label for="descricao">Descrição do produto: </label>
+            <!-- Adicione o id apropriado para o input abaixo -->
+            <input placeholder="Digite a descrição do produto..."type="text" id="descricao-produto" name="descrição">
+        </div>
+        
+        <div class="campos">
+            <label for="preco">Preço (em R$): </label>
+            <!-- Adicione o id apropriado e o type para receber números abaixo -->
+            <input placeholder="Digite o preço do produto..." type="number" id="preco" name="preco">
+        </div>
+        
+        <div class="campos">
+            <!-- Preencha as propriedades necessárias para os elementos abaixo -->
+            <label>Quantidade disponível: </label>
+            <input placeholder="Digite a quantidade disponível..."type="number" id="quantidade" name="quantidade">
+        </div>
+
+        <div class="campos form-add">
+            <!-- Adicione ao type do botão abaixo o valor para que ele submeta o formulário -->
+            <button id="btn-form"type="submit">Adicionar</button>
+        </div>
+
+    </form>
+    <section><hr id="hr-footer"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3669.704866407878!2d-47.0110309858304!3d-23.107897350885658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf322832e9fa49%3A0xc8be16f7223b971b!2sOutlet%20Premium%20S%C3%A3o%20Paulo!5e0!3m2!1spt-BR!2sbr!4v1634240907685!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></section>
+    <footer class="footer-distributed">
+    
+                <div class="footer-left">
+    
+                    <h3> <img id="logoFooter" src="./img/logo.jpg" 
+                        alt="Outlet Calçados SP"/>             
+                    </h3>
+                    <p class="footer-links">
+                      <a href="index.html"  ><i class="fa fa-home"></i></a> |
+            <a href="ctrl-estoque.html"><i class="fas fa-shoe-prints"></i> </a> |
+                 <a href="carrinho.html" ><i class="fas fa-shopping-cart"></i>  </a> |
+                 <a href="#btn-enviar"><i class="fa fa-phone"></i></a> 
+
+                   </p>
+                    <p><i class="fa fa-phone"></i> Vendas: (11) 5523-2310 <br>
+                         <i class="fa fa-phone"></i> Sac: (11) 0800-9328
+                    <br><i class="fab fa-whatsapp"></i> Whats: (11) 99881-1080
+                    <br><i class="far fa-envelope"></i> Email: contato@outletcalcadossp.com.br</p>
+
+                    <p class="footer-company-name">Outlet Calçados SP © 2021</p>
+
+                    <div class="footer-icons">
+    
+                        <a href="www.facebook.com" target="_blank"><i class="fa-facebook-square fa-brands"></i></a>
+                        <a href="www.twitter.com"target="_blank"><i class="fa-twitter-square fa-brands"></i></a>
+                        <a href="www.instagram.com" target="_blank"><i class="fa-instagram-square fa-brands"></i></a>
+                        <a href="www.instagram.com" target="_blank"><i class="fa-whatsapp-square fa-brands"></i></a>
+                        <!-- <a href="#"><i class="fa fa-facebook"></i></a> -->
+                    </div>
+    
+                </div>
+    
+                <div class="footer-right">
+    
+                    <h4>Entre em contato:</h4>
+    
+                    <form action="">
+                        <input type="text" name="email" placeholder="Email">
+                        <input type="phone" name="phone" placeholder="Telefone">
+                        <textarea name="message" placeholder="Mensagem"></textarea>
+                        <button id="btn-enviar" type="submit" onclick="enviarEmail()">Enviar</button>
+                    </form>
+    
+                </div>
+    
+              
+            </footer>
+            <script> 
+                // Função enviar email
+                const enviarEmail = () => {
+                    return alert("Email Enviado com sucesso")
+                }
+                </script>
+</body>
+</html>

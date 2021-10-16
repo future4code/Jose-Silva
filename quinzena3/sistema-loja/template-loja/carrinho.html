@@ -45,112 +45,46 @@
       </div>
     <br>
 
-    <h2 class="text-principal">Calçados masculinos e femininos de várias marcas e modelos:</h2>
+    <h2 class="text-principal">Carrinho:</h2>
 
     <table class="tabela">
         
         <tr>
-            <th>Imagem:</th>
+            <th>Item:</th>
             <th>Descrição:</th>
             <th>Preço:</th>
-            <th>Quantidade:</th>
-            <th><i class="fas fa-shopping-cart"></i></th>
+            <th><i class="fas fa-shopping-cart">( 2 )</i></th>
         </tr>
-        <hr>
-        <tr>
-            <td><img class="imgProdutos" src="./img/mickey.webp" alt="Tênis - Gucci Mickey"/></td>
-            <td> Tênis - Gucci Mickey</td>
-            <td> R$ 5299,99</td>
-            <td class="qnt"> 3 </td>
-            <td > <button onclick="add()">Adicionar</button> </td>
-
-        </tr>
-        <tr>
-            <td><img class="imgProdutos" src="./img/burb.jpg" alt="Tênis Sneaker Burberry Vintage Check"/></td>
-            <td> Tênis - Burberry Vintage Check </td>
-            <td> R$ 5449,99</td>
-            <td class="qnt"> 1 </td>
-            <td > <button onclick="add()">Adicionar</button> </td>
-            
-        </tr>
-        <tr>
-            <td><img class="imgProdutos" src="./img/micro.jpg" alt="Tênis Adidas - Microbounce"/></td>
-            <td> Tênis Adidas - Microbounce </td>
-            <td> R$ 1199,00</td>
-            <td class="qnt"> 3 </td>
-            <td > <button onclick="add()">Adicionar</button> </td>
-
-        </tr>
-
-        <tr>
-            <td><img class="imgProdutos" src="./img/x.jpg" alt="Tênis Mizuno - Profecy X"/></td>
-            <td> Tênis Mizuno - Profecy X </td>
-            <td> R$ 1499,99</td>
-            <td class="qnt"> 2 </td>
-            <td > <button onclick="add()">Adicionar</button> </td>
-
-        </tr>
-
-        <tr>
-            <td><img class="imgProdutos"  src="./img/nimbus.jpg" alt="Tênis Asics - Nimbus 23"/></td>
-            <td> Tênis Asics - Nimbus 23 </td>
-            <td> R$ 899,99</td>
-            <td class="qnt"> 6 </td>
-            <td > <button onclick="add()">Adicionar</button> </td>
-
-        </tr>
+    
         
         <tr>
             <td><img class="imgProdutos" src="./img/nfh.jpg" alt="Tênis Nike Jordan - NFH "/></td>
             <td> Tênis Nike Jordan - NFH </td>
             <td> R$ 790,00</td>
-            <td class="qnt"> 4 </td>
-            <td > <button onclick="add()">Adicionar</button> </td>
 
-        </tr>
-        <tr>
-            <td><img class="imgProdutos" src="./img/balmain.jpeg" alt="Tênis - Balmain Paris AllBlack "/></td>
-            <td> Tênis - Balmain Paris AllBlack</td>
-            <td> R$ 6499,99</td>
-            <td class="qnt"> 4 </td>
-            <td > <button onclick="add()">Adicionar</button> </td>
-
+            <td > <button><i class="fas fa-trash-alt"></i></button> </td>
         </tr>
 
         <tr>
-            <td><img class="imgProdutos" src="./img/gucci.jpg" alt="Tênis Gucci - Couro WR "/></td>
-            <td> Tênis Gucci - Couro WR  </td>
-            <td> R$ 4999,99</td>
-            <td class="qnt"> 10 </td>
-            <td > <button onclick="add()">Adicionar</button> </td>
+            <td><img class="imgProdutos" src="./img/x.jpg" alt="Tênis Mizuno - Profecy X"/></td>
+            <td> Tênis Mizuno - Profecy X </td>
+
+            <td> R$ 1499,99</td>
+            <td > <button><i class="fas fa-trash-alt"></i></button> </td>
 
         </tr>
-        <tr>
-            <td><img class="imgProdutos" src="./img/airmax.jpg" alt="Tênis Nike - Airmax Flyknit "/></td>
-            <td> Tênis Nike - Airmax Flyknit </td>
-            <td> R$ 869,00</td>
-            <td class="qnt"> 1 </td>
-            <td > <button onclick="add()">Adicionar</button> </td>
-
+        <tr id="carrinhoLinhaCompra">
+            <td>Finalizar pedido:</td>
+            <td>  <select style="width:40%; margin:auto;" type="text" placeholder="sua faixa etária">
+                <option value="">Boleto</option>
+                <option value="-18">Cartão</option></select> </td>
+            <td> R$ 2289,99 </td>
+            <td > <button onclick="add()">Comprar</button> </td>
         </tr>
-        <tr>
-            <td><img class="imgProdutos" src="./img/versace.jpg" alt=" Tênis - Versace Chain Reaction"/></td>
-            <td>         Tênis - Versace Chain Reaction
-            </td>
-            <td> R$ 10069,00</td>
-            <td class="qnt"> 2 </td>
-            <td > <button onclick="add()">Adicionar</button> </td>
 
-        </tr>
-        <tr>
-            <td><img class="imgProdutos" src="./img/nb.jpg" alt="Tênis New Balance - Protect"/></td>
-            <td> Tênis New Balance - Protect</td>
-            <td> R$ 699,99</td>
-            <td class="qnt"> 4 </td>
-            <td > <button onclick="add()">Adicionar</button> </td>
-
-        </tr>
     </table>
+
+
     <section><hr id="hr-footer"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3669.704866407878!2d-47.0110309858304!3d-23.107897350885658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf322832e9fa49%3A0xc8be16f7223b971b!2sOutlet%20Premium%20S%C3%A3o%20Paulo!5e0!3m2!1spt-BR!2sbr!4v1634240907685!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></section>
     <footer class="footer-distributed">
     
@@ -206,7 +140,7 @@
                 }
                 // Add carrinho
                 const add = () => {
-                    return alert(`Item adicionado ao carrinho! ;)`)
+                    return alert(`Obrigado por comprar na Outlet Calcados SP ;)`)
                 }
                 </script>
 </body>

@@ -1,0 +1,13 @@
+``` function calculaPrecoTotal(quantidade) {
+  // Escreva seu código aqui
+  let maca = 1.3
+  let total = 0;
+  if(quantidade < 12){
+    total = maca * quantidade
+  }else {
+    maca = 1
+    total = maca * quantidade
+  }
+  return total
+
+} ```

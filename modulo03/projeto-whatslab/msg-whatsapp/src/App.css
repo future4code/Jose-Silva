@@ -1,25 +1,19 @@
-.App {
-  border: 2px solid;
-  height:99vh;
-  width:40%;
-  margin: 0 auto;
-  position: relative;
-  border-radius:1%;
-}
 
-footer{
-  position: absolute;
-	bottom: 0;
-  padding:4px;
-  display: flex;
-  width: 100%;
-}
-#msg{
-  width:65%;
-}
-#user{
-  width:20%;
-}
-#btn {
-  width:10%;
-}
+
+#mensagens {
+  
+  max-width: 100%;
+  margin: 0 auto;
+  margin-bottom: 8px;
+  padding: 0 15px;
+ text-align: center;
+
+word-wrap: break-word;
+
+  
+  }
+
+  #p-usuario{
+    font-size: 16px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }

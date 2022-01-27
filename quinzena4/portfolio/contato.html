@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+
+</head>
+<body>
+    <!-- Menu responsivo -->
+    <div id="menuToggle"> 
+    
+      <input type="checkbox" />
+      
+      
+      <span></span>
+      <span></span>
+      <span></span>
+      
+    
+      <ul id="menu-responsivo">
+        <div> <a href="index.html"><i class="fa fa-home"></i> Home</a></div>
+        
+        <div> <a href="sobre.html"><i class="fa fa-user"></i>     Sobre</a></div>
+        <div class="dropdown" ><a href="projetos.html"><i class="fas fa-code"></i> Meus Projetos</a>
+          <div class="dropdown-content" >
+           <div >        <a href="https://rockstargamesbrazil.herokuapp.com/" target="_blank"><i class="fa fa-gamepad"></i> React Games</a></div>
+           <div >        <a href="https://react-padaria-sagrado.herokuapp.com/ " target="_blank"><i class="fas fa-utensils"></i> React Padaria</a></div>
+           <div >        <a href="https://reactpalmeiras.herokuapp.com/" target="_blank"><i class="fas fa-futbol"></i> Jogos Futebol </a></div>
+         </div>
+       </div>
+    
+           <div>        <a href="contato.html" ><i class="fa fa-phone"></i> Contato</a></div>
+      
+         
+      </ul>
+    </div>
+  
+  <!--  Header-Menu -->
+  
+  <div class="header" > 
+    <div class="menu">
+    <!-- <h1 class="text-logo">   José Renato 
+    </h1>  <br> -->
+  
+      <a href="index.html">        
+      <img id="logo" src="./img/rr.jpg" />
+      </a>
+   
+       <div class="header-right">
+  
+          <div> <a href="index.html"><i class="fa fa-home"></i> Home</a></div>
+          <div> <a href="sobre.html"><i class="fas fa-user-tie"></i>  Sobre</a></div>
+          <div class="dropdown" ><a href="projetos.html"><i class="fas fa-code"></i> Projetos</a>
+  
+            <div class="dropdown-content">
+             <div class="dropbtn"> <a href="https://rockstargamesbrazil.herokuapp.com/" target="_blank" ><i class="fa fa-gamepad"></i> React Games</a></div>
+             <div class="dropbtn"> <a href="https://react-padaria-sagrado.herokuapp.com/" target="_blank" ><i class="fas fa-utensils"></i> React Padaria</a></div>
+             <div class="dropbtn"> <a href="https://reactpalmeiras.herokuapp.com/" target="_blank"><i class="fas fa-futbol"></i> Jogos de Futebol</a></div>
+           </div>
+        
+          </div>  
+          <div> <a href="contato.html" ><i class="fa fa-phone"></i> Contato</a></div>
+        
+          
+  
+      </div>
+  
+      
+      </div>
+  </div>
+<br>
+
+<div id="foot">
+
+  <div>
+    <br> Whatsapp: <a href="https://api.whatsapp.com/send?phone=5511982362259" target="_blank"><i class="fa-whatsapp-square fa-brands"></i></a>
+    <br>
+    <a href="https://www.linkedin.com/in/jos%C3%A9-renato-d-andaluzia-da-silva-02585314a/" target="_blank">
+     Linkedin: <i class="fab fa-linkedin"></i></a><br>
+    Github:<a href="https://github.com/joserenatofull?tab=repositories"target="_blank"><i class="fab fa-github-square"></i></a>
+  </div>
+</div>
+  <section><hr id="hr-footer">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14618.438583123012!2d-46.66792177936877!3d-23.65414669919397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5abd1c9c3ff5%3A0xb64ad2f9fa54c2ea!2sZona%20Sul%20de%20S%C3%A3o%20Paulo%20-%20Vila%20Santa%20Catarina%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004379-060!5e0!3m2!1spt-BR!2sbr!4v1635267442367!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>  </section>
+  <footer class="footer-distributed">
+  
+              <div class="footer-left">
+  
+                
+
+              
+                  <p><br>
+                       <i class="fa fa-phone"></i> Tel: (11) 5521-7784
+                  <br><i class="fab fa-whatsapp"></i> Cel: (11) 98236-2259
+                  <br><i class="far fa-envelope"></i> joserenatoads@gmail.com</p>
+
+                  <p class="footer-company-name">Portfólio desenvolvido usando apenas HTML e CSS.</p>
+
+                  <div class="footer-icons">
+  
+                      <a href="https://www.linkedin.com/in/jos%C3%A9-renato-d-andaluzia-da-silva-02585314a/" target="_blank">
+                        <i class="fab fa-linkedin"></i></a>
+                      <a href="https://github.com/joserenatofull?tab=repositories"target="_blank"><i class="fab fa-github-square"></i></a>
+                      <a href="https://api.whatsapp.com/send?phone=5511982362259" target="_blank"><i class="fa-whatsapp-square fa-brands"></i></a>
+                      <!-- <a href="#"><i class="fa fa-facebook"></i></a> -->
+                  </div>
+  
+              </div>
+  
+              <div class="footer-right">
+  
+                  <h4>Entre em contato:</h4>
+  
+                  <form action="">
+                      <input type="text" name="email" placeholder="Email">
+                      <input type="text" id="phone" placeholder="Telefone" name="phone" onkeypress="mask(this, mphone);" onblur="mask(this, mphone);" />
+
+                      <textarea name="message" placeholder="Mensagem"></textarea>
+                      <button id="btn-enviar" type="submit" onclick="enviarEmail()">Enviar</button>
+                  </form>
+  
+              </div>
+  
+            
+          </footer>
+          <script> 
+          // Função enviar email
+          const enviarEmail = () => {
+              return alert("Email Enviado com sucesso")
+          }
+          // Função passar as imagens automaticamente
+          var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+var i;
+var slides = document.getElementsByClassName("mySlides");
+var dots = document.getElementsByClassName("dot");
+for (i = 0; i < slides.length; i++) {
+  slides[i].style.display = "none";  
+}
+slideIndex++;
+if (slideIndex > slides.length) {slideIndex = 1}    
+for (i = 0; i < dots.length; i++) {
+  dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex-1].style.display = "block";  
+dots[slideIndex-1].className += " active";
+setTimeout(showSlides, 4000);}
+
+
+//mascara telefone
+function mask(o, f) {
+  setTimeout(function() {
+    var v = mphone(o.value);
+    if (v != o.value) {
+      o.value = v;
+    }
+  }, 1);
+}
+
+function mphone(v) {
+  var r = v.replace(/\D/g, "");
+  r = r.replace(/^0/, "");
+  if (r.length > 10) {
+    r = r.replace(/^(\d\d)(\d{5})(\d{4}).*/, "($1) $2-$3");
+  } else if (r.length > 5) {
+    r = r.replace(/^(\d\d)(\d{4})(\d{0,4}).*/, "($1) $2-$3");
+  } else if (r.length > 2) {
+    r = r.replace(/^(\d\d)(\d{0,5})/, "($1) $2");
+  } else {
+    r = r.replace(/^(\d*)/, "($1");
+  }
+  return r;
+}
+          </script>
+
+    
+</body>
+</html>

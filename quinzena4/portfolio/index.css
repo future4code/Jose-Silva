@@ -1,0 +1,796 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap');
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+* {
+  font-family: Roboto;
+}
+body{padding: 0;
+  margin: 0;
+  font-family: "Avenir Next", "Avenir", sans-serif;
+}
+
+  /* Cabecalho - menu */
+
+  .cabecalho{
+  margin-left:0;
+  padding: 0;
+  height:100px;
+  background: linear-gradient(217deg, #d5d5d5 , rgba(75, 62, 62, 0) 70.71%),
+    linear-gradient(127deg,white, rgba(0,255,0,0) 70.71%),
+    linear-gradient(300deg, rgba(222, 219, 224, 0.822), rgba(118, 161, 124, 0) 70.71%);  }
+  
+  .text-logo{
+    display: inline-block;
+    margin-left: 5%;
+    border: none;
+  }
+    #logo{
+      height:100px;
+      width: 100px;
+      object-fit: contain;
+      margin-left:5%;
+      border-radius: 10px;
+  }
+  
+  a {
+    color: initial;
+    text-decoration: none;
+  }
+  
+  .header-right a:hover{
+    background-color: black;
+    color: white;
+  
+  }
+  
+  .header a.active {
+    background-color: black;
+    color: white;
+  }
+  
+
+  /* Menu a direita (laranja) */
+
+
+
+
+
+  .header-right {
+    
+    margin-right:5%;
+    display: flex;
+    float:right;
+    background-color: rgba(255, 81, 0, 0.774);
+    border-radius: 5px;
+    font-size: 23px;
+    height: 40px;
+    margin-top: 30px;
+  }
+
+  .header-right div{
+    align-self: center;
+  }
+  
+  .header-right a{
+  margin: 10px; 
+  text-align: center;
+  align-items: center;
+    
+  }
+  
+  /* Drop */
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    }
+    .dropbtn a{
+      width: 100%;
+      display: inline-flex;
+    }
+    .dropdown-content {
+    display: none;
+    position: absolute  ;
+    background-color: rgba(248, 248, 248, 0.877);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 2px;
+    z-index: 1;
+    width:100%;
+    
+    }
+   
+   
+    .dropdown-content a:hover {background-color: black;  }
+    
+    .dropdown:hover .dropdown-content {display: block;}
+
+
+
+    
+    
+
+/* CONTEUDO principal */
+
+.conteudo-principal{
+  height: 700px;
+  background-color: rgba(0, 0, 0, 0.973);
+  display:flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.titulo{
+  font-family: 'Zen Kurenaido', sans-serif;
+  color: white;   
+  font-size: 25px;
+  bottom:80px;
+  position: relative;
+  text-align: center;
+  z-index: 200;
+
+
+}
+.sobre-titulo{
+    font-family: 'Zen Kurenaido', sans-serif;
+      color: white;   
+    font-size: 27px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    z-index: 200;
+  
+
+}
+#subtitulo{
+  font-family: 'textobold';
+  color: white;   
+  font-size: 18px;
+  bottom:80px;
+  position: relative;
+  text-align: center;
+}
+.conteudo-texto{
+  font-family: 'Zen Kurenaido', sans-serif;
+
+  background-color:rgba(34, 53, 53, 0.178);
+  border-radius: 10px;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+}
+
+
+.ball2{
+  position: absolute;
+  bottom:23%;
+  left:20%;
+  width: 120px;
+height: 120px;
+  background:  radial-gradient(
+      300% 250% at 70% bottom,
+      rgba(252, 10, 171, 0.842),
+      transparent 12%
+      ),
+      radial-gradient(
+          300% 250% at 40% bottom,
+rgb(243, 22, 22),transparent 12%
+          ),
+  
+          radial-gradient(
+              90% 100% at 28% top,
+              rgb(216, 236, 39)10%,
+              rgb(216, 236, 39)-1%,rgb(255, 166, 0) ,
+              rgb(255, 94, 0), rgb(255, 94, 0));
+         border-radius: 50%;
+         
+}
+.ball1{
+  position: absolute;
+  top:90%;
+  left:15%;
+  width: 150px;
+height: 150px;
+  background:  radial-gradient(
+      300% 250% at 70% bottom,
+      rgba(252, 10, 171, 0.842),
+      transparent 12%
+      ),
+      radial-gradient(
+          300% 250% at 40% bottom,
+rgb(243, 22, 22),transparent 12%
+          ),
+  
+          radial-gradient(
+              90% 100% at 28% top,
+              rgb(216, 236, 39)10%,
+              rgb(216, 236, 39)-1%,rgb(255, 166, 0) ,
+              rgb(255, 94, 0), rgb(255, 94, 0));
+         border-radius: 50%;
+         
+}
+/* border da img projeto */
+#circle3 {
+  z-index: 9;
+  position: relative;
+  width: 300px;
+height: 300px; 
+  border-radius: 10%;
+  border: 12px solid #000000;
+  background-color: transparent;
+  border-color: rgba(10, 132, 214, 0.925);
+z-index: 8;
+
+}
+/* border das minhas fotos em index e sobre*/
+
+#circle {
+  z-index: 9;
+  position: relative;
+  width: 300px;
+height: 300px; 
+  border-radius: 50%;
+  border: 12px solid #000000;
+  background-color: transparent;
+  border-color: rgba(255, 254, 254, 0.877);
+z-index: 8;
+
+}
+/* minhas fotos em index e sobre */
+
+#img1{
+  z-index: 9;
+  width: 301px;
+  height: 301px; 
+  position: relative;
+  bottom: 0.5%;
+  left:0.5;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/*tecnologias em home*/
+#tecnologias{
+  text-align: center;
+  font-size: x-large;
+  
+}
+/* logo tecnologias */
+#html:hover{
+  color: orangered;
+}
+#css:hover{
+  color: rgb(61, 94, 243);
+}
+#js:hover{
+  color: rgb(219, 219, 4);
+}
+#react:hover{
+  color: cyan;
+}
+
+#node:hover{
+  background: linear-gradient(217deg, black , green 120.71%);
+}
+
+#sql:hover{
+  color: rgb(23, 83, 173);
+}
+#aws:hover{
+  background: linear-gradient(217deg, black , orange 150.71%);
+}
+
+#git:hover{
+  background: white;
+  color:black;
+}
+#bot:hover{
+  color: rgb(92, 21, 206);
+
+}
+/* descricao */
+.desc-index{margin-top:10px;
+  font-family: 'Zen Kurenaido', sans-serif;
+  font-size: 21px;
+}
+
+/* hr da index e projetos */
+
+#hr-index{  background: radial-gradient( rgb(216, 236, 39)10%,
+  rgb(216, 236, 39)-1%,rgb(255, 166, 0) ,
+  rgb(255, 94, 0));
+
+height:1px;
+}
+
+.hr-proj{  
+  height:5px;
+  background-color:black;
+  color:red;
+}
+
+.img-proj{ 
+  z-index: 9;
+  width: 301px;
+  height: 301px; 
+
+  border-radius: 5%;
+  object-fit: cover;
+}
+
+/* img das insituições em sobre*/
+.instituicoes{ 
+      height:55px;
+      width: 55px;
+      margin: 5px;
+      object-fit: contain;
+      border-radius: 5px;
+}
+
+
+/* FOOOOTER em contato*/
+
+#logoFooter{
+	height:180px;
+    width: 320px;
+    object-fit:cover ;
+}
+section{
+	margin-top: 0;
+}
+    
+#hr-footer{
+	background: linear-gradient(grey,white);
+		height: 20px;
+}
+
+#btn-enviar{
+	cursor: pointer;
+	background-color: white;
+	color:black
+}
+
+.footer-distributed{
+    background: linear-gradient(white,grey);
+
+	box-sizing: border-box;
+	width: 100%;
+	font: bold 16px sans-serif;
+	text-align: left;
+	padding: 50px 60px 40px;
+	overflow: hidden;
+	text-align: center;
+}
+
+iframe {
+  width: 100%;
+  height: 200px;
+  margin-top: -5px;
+}
+
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	float: left;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Roboto', cursive;
+	margin: 0 0 10px;
+}
+
+.footer-distributed h3 span{
+	color:  #5383d3;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  black;
+	margin: 0 0 10px;
+	padding: 0px;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+	padding: 18px;
+
+}
+
+.footer-distributed .footer-company-name{
+	color:  white;
+	font-size: 16px;
+	font-weight: normal;
+	margin: 0;
+	font-family: cursive;
+	font-style: italic;
+}
+
+/* Footer social icons */
+
+.footer-distributed .footer-icons{
+	margin-top: 40px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #212122;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	float: right;
+}
+
+.footer-distributed .footer-right p{
+	display: inline-block;
+	vertical-align: top;
+	margin: 15px 42px 0 0;
+	color: #ffffff;
+}
+
+/* The contact form */
+
+.footer-distributed form{
+	display: inline-block;
+}
+
+.footer-distributed form input,
+.footer-distributed form textarea{
+	display: block;
+	border-radius: 3px;
+	box-sizing: border-box;
+	background-color:  #1f2022;
+	box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+	border: none;
+	resize: none;
+
+	font: inherit;
+	font-size: 14px;
+	font-weight: normal;
+	color:  #d1d2d2;
+
+	width: 400px;
+	padding: 18px;
+}
+
+.footer-distributed ::-webkit-input-placeholder {
+	color:  #5c666b;
+}
+
+.footer-distributed ::-moz-placeholder {
+	color:  #5c666b;
+	opacity: 1;
+}
+
+.footer-distributed :-ms-input-placeholder{
+	color:  #5c666b;
+}
+
+
+.footer-distributed form input{
+	height: 55px;
+	margin-bottom: 15px;
+}
+
+.footer-distributed form textarea{
+	height: 100px;
+	margin-bottom: 20px;
+}
+
+.footer-distributed form button{
+	border-radius: 3px;
+	background-color:  #33383b;
+	color: #ffffff;
+	border: 0;
+	padding: 15px 50px;
+	font-weight: bold;
+	float: right;
+}
+
+
+
+
+
+/* conteudo em contatos */
+#foot{
+  height:200px;
+  color: black;
+  font-family: 'Zen Kurenaido', sans-serif;
+  font-size: x-large;
+  text-align: center;
+  justify-content: center;
+}
+
+
+
+/* media queries */
+
+
+@media screen and (min-width: 961px) {
+  #menuToggle{
+    display:none;
+  }
+}
+@media screen and (max-width: 960px) {
+  .img-proj,#img1{max-width:201px;
+  max-height: 202px;}
+  #circle3,#circle{max-width:200px;
+    max-height: 200px;}
+    .img-proj{ 
+      z-index: 9;
+      object-fit: cover;
+    }
+  .header{text-align: center}
+.header-right  {
+  display: none;
+}
+
+
+
+#menuToggle
+{
+display: block;
+position: fixed;
+top: 20px;
+right: -180px;
+z-index: 99999999999;
+-webkit-user-select: none;
+user-select: none;
+}
+
+#menuToggle a
+{
+text-decoration: none;
+color: #232323;
+transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+background-color: black;color: rgb(229, 241, 211)  ;
+border-radius: 5px;
+}
+
+
+#menuToggle input
+{
+display: block;
+width: 40px;
+height: 32px;
+position: absolute;
+top: 0px;
+left: 0px;
+cursor: pointer;
+
+opacity: 0; 
+
+-webkit-touch-callout: none;
+}
+
+
+#menuToggle span
+{
+display: block;
+width: 33px;
+height: 4px;
+margin-bottom: 5px;
+position: relative;
+
+background-color: rgb(240, 102, 38);
+border-radius: 3px;
+
+z-index: 10;
+
+transform-origin: 4px 0px;
+
+transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+          background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+          opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+transform-origin: 0% 100%;
+}
+
+/* 
+* Transform all the slices of hamburger
+* into a crossmark.
+*/
+#menuToggle input:checked ~ span
+{
+opacity: 1;
+transform: rotate(45deg) translate(-2px, -1px);
+background: #232323;
+}
+
+/*
+* But let's hide the middle one.
+*/
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+opacity: 0;
+transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+* Ohyeah and the last one should go the other direction
+*/
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+* Make this absolute positioned
+* at the top left of the screen
+*/
+#menu-responsivo
+{
+position: relative;
+width:280;
+margin: 0px 0 0 -60px;
+margin-right: 0;
+padding-top: 50px;
+padding-bottom: 50px;
+background: #e4f2f8ce;
+list-style-type: none;
+-webkit-font-smoothing: antialiased;
+/* to stop flickering of text in safari */
+transform-origin: 0% 0%;
+transform: translate(100%, 0);
+transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+ul a
+{
+font-size:22px ;
+margin: 50px;
+padding: auto;
+
+
+}
+
+/*
+* And let's slide it in from the left
+*/
+#menuToggle input:checked ~ ul
+{
+transform: translate(-60%, 0);
+
+}
+}
+
+@media screen and (max-width: 500px) {
+#logoFooter,.text-logo{display: none}
+
+  #logo{
+  
+  width:100%;
+  margin: auto;
+  border: none;
+}
+  .header a {
+      display: block;
+      text-align: left;
+    }
+  
+    .header-right {
+      display: none;
+    }
+  
+}
+
+@media screen and (max-width: 700px) {
+  .conteudo-principal{background-color:black;
+    display: inline-block;
+    }
+    .ball1{display: none}
+    .titulo{margin-top:100px}
+    #circle,#img1,#circle3{
+      margin:0 auto;
+    }
+  
+}
+
+@media screen and (max-width: 500px) {
+
+
+	#logoFooter,.text-logo{display: none}
+	#logo{
+		
+		width:100%;
+		margin: auto;
+		border: none;
+	}
+	
+
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .header-right {
+    float: none;
+  }
+}
+
+@media (max-width: 1000px) {
+
+	.footer-distributed {
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-company-name{
+		font-size: 16px;
+	}
+
+	.footer-distributed form input,
+	.footer-distributed form textarea{
+		width: 100%;
+		
+	}
+
+	.footer-distributed form button{
+		padding: 10px 35px;
+	}
+
+}
+
+@media (max-width: 800px) {
+
+	.footer-distributed{
+		padding: 30px;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-right{
+		float: none;
+		max-width: 300px;
+		margin: 0 auto;
+	}
+
+	.footer-distributed .footer-left{
+		margin-bottom: 40px;
+	}
+
+	.footer-distributed form{
+		margin-top: 30px;
+	}
+
+	.footer-distributed form{
+		display: block;
+	}
+
+	.footer-distributed form button{
+		float: none;
+	}
+}
